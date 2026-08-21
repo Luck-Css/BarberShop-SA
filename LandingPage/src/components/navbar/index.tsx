@@ -1,13 +1,13 @@
-import { MdPets } from "react-icons/md";
+import { TiScissorsOutline } from "react-icons/ti";
 import { LuCalendarDays } from "react-icons/lu";
 
 export default function Navbar() {
     return (
         <header className="md:px-20 px-5 py-6 flex justify-between items-center border-b border-b-line">
             <div className="flex gap-1.5 justify-between items-center">
-                <MdPets size={20} color="#3f9271" />
-                <p className="text-forest font-black text-xs md:text-base">Pet</p>
-                <p className="text-coral font-black text-xs md:text-base">Care</p>
+                <TiScissorsOutline size={25} color="#3f9271" />
+                <p className="text-forest font-black text-xs md:text-base">Barber</p>
+                <p className="text-coral font-black text-xs md:text-base">Shop</p>
             </div>
 
             <nav className="flex items-center justify-between">
@@ -20,7 +20,7 @@ export default function Navbar() {
                     </li>
                     <li className="text-forest-soft text-xs md:text-base">
                         <a href="" className="relative transition-colors duration-300 group">
-                            Funcionalidades
+                            Serviços
                          <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-coral transform scale-x-0 transition-transform duration-300 origin-middle group-hover:scale-x-100"></span>  
                         </a>
                     </li>
@@ -36,7 +36,7 @@ export default function Navbar() {
             </nav>
 
             <a href="" className="hidden md:block bg-forest text-white p-3 items-center rounded-full font-black">
-                Agendar Consulta
+                Marcar Horário
             </a>
             <div className="block md:hidden bg-forest p-2 rounded-b-full">
                 <a href=""><LuCalendarDays size={14} color="#fff" /></a>
